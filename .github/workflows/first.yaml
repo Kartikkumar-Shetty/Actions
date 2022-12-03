@@ -20,6 +20,7 @@ jobs:
       run: env
   job3:
     name: third job
+    runs-on: macos-latest
     needs: [job1, job2]
     steps:
     - name: step one
